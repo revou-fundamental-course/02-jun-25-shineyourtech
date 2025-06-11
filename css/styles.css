@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(190, 150, 100, 50); 
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    /*background-colr: #4CAF50;*/
+    /*background-image: url('https://png.pngtree.com/png-clipart/20200727/original/pngtree-trade-market-logo-design-template-finance-logo-with-arrow-png-image_5137886.jpg');
+    */
+    background-image: url('https://images-platform.99static.com//-6g9RVy_4xAtLSmNoH_Oy_u1_zg=/1058x1066:1928x1935/fit-in/500x500/99designs-contests-attachments/138/138866/attachment_138866070');
+    border-radius: 50px;
+    display: flex;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+.navi{
+    display: flex;
+    border: 1px solid black; 
+    align-items: center;
+}
+.nav-button{
+    border: 1px solid rgb(0,0,0);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(190, 150, 100, 50);
+    
+}
+.body{
+    font-family: "Montserrat";
+}
