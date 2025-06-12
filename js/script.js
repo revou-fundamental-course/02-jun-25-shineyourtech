@@ -1,3 +1,17 @@
+// Welcome Animation
+window.addEventListener('load', function() {
+    const welcomeOverlay = document.getElementById('welcomeOverlay');
+    
+    // Show welcome for 3 seconds, then fade out
+    setTimeout(() => {
+        welcomeOverlay.classList.add('fade-out');
+        // Remove from DOM after animation completes
+        setTimeout(() => {
+            welcomeOverlay.style.display = 'none';
+        }, 1000);
+    }, 2000);
+});
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -107,14 +121,14 @@ function displayContactInfo(data) {
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
-});
