@@ -224,7 +224,6 @@ main {
 .card-placeholder {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem; 
     margin-top: 2rem;
     align-items: start;
