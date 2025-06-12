@@ -1,48 +1,3 @@
-/* Reset CSS
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(190, 150, 100, 50); 
-}
-
-.logo{
-    width: 50px;
-    height: 50px;
-  
-    background-image: url('https://images-platform.99static.com//-6g9RVy_4xAtLSmNoH_Oy_u1_zg=/1058x1066:1928x1935/fit-in/500x500/99designs-contests-attachments/138/138866/attachment_138866070');
-    border-radius: 50px;
-    display: flex;
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}  
-.inline{
-    display: inline-block;
-    margin: 0 10px;
-} 
-
-.nav-button{
-    border: 1px solid rgb(0,0,0);
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgba(190, 150, 100, 50);
-    
-}
-.body{
-    font-family: "Montserrat";
-}
- */
-
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +8,8 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     color: #333;
-  
+    margin-top: 30px;
+   
     width: 100%;
 }
 
@@ -83,12 +39,11 @@ body {
 }
 
 
-
 /* Header & Navigation */
 .header {
     background: linear-gradient(135deg, rgba(30,60,114,0.3) , #2a5298);
     color: white;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     position: fixed;
     width: 100%;
     max-height: 200px;
@@ -150,6 +105,7 @@ main {
 /* Banner Slider */
 .slider-container {
     position: relative;
+    margin-top: 20px;
     max-width: 100%;
     width: 100%;
     height: 500px;
@@ -174,22 +130,35 @@ main {
 }
 
 .slide1 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    /*background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23667eea" width="1200" height="600"/><circle fill="%23764ba2" cx="200" cy="150" r="80"/><circle fill="%23f093fb" cx="800" cy="300" r="120"/><circle fill="%234facfe" cx="1000" cy="100" r="60"/></svg>');
+    */
     background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://media.istockphoto.com/id/1500507449/photo/business-gold-candlestick-investment-stock-exchange-wealth-financial-concept-on-3d-golden.jpg?s=612x612&w=0&k=20&c=8TlpbRHkWKvCA3n6PVS1_ObU3rr7N0A6Zp8oe1oLuis=');
+    background-position: center;
 }
-
-.slide2 {
+.slide2 {/*
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%2343e97b" width="1200" height="600"/><polygon fill="%2338f9d7" points="600,50 750,200 450,200"/><polygon fill="%23667eea" points="200,400 350,550 50,550"/><polygon fill="%23ffeaa7" points="1000,300 1150,450 850,450"/></svg>');
+    */
     background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://www.shutterstock.com/image-vector/technical-trader-analyzing-stock-chart-260nw-590949026.jpg');
+    background-position: center;
+
 }
 
 .slide3 {
+    /*
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23fd79a8" width="1200" height="600"/><rect fill="%23fdcb6e" x="100" y="100" width="200" height="150" rx="20"/><rect fill="%236c5ce7" x="400" y="200" width="150" height="200" rx="20"/><rect fill="%2300b894" x="700" y="50" width="300" height="100" rx="20"/></svg>');
+    */
     background-size: cover;
-}
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://today.csuchico.edu/wp-content/uploads/2022/04/20220324_FinTechLab_JH_043-scaled.jpg');
+    background-position: center;
+}   
 
 .slide-content h2 {
     font-size: 3rem;
@@ -247,7 +216,8 @@ main {
 
 /* content section */
 .section{
-    padding: 4rem 2rem; 
+    margin-top: 0px;
+    padding: 4.5rem 0; 
     background: #f8f9fa;
 }
 
@@ -261,12 +231,28 @@ main {
 }
 
 .card {  
-    box-shadow: 100 30px 30px rgba(46, 25, 59, 0.5);
-    background: #d3d4d4; 
+    background: #f8f8f8; 
     padding: 2rem; 
-    border-radius: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 15px 3px rgba(177, 88, 233, 0.2); 
     text-align: center;
 }
+.card:hover {
+    background: #fff9e7;
+    transform: translateY(-5px);
+}
+.card-button {
+    background: #945394;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .note{
     font-size: 1.2rem;
     line-height: 1.8; 
@@ -306,12 +292,12 @@ main {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
@@ -320,33 +306,65 @@ main {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #2a5298;
+    border-color: #007bff;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 8px 12px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 14px;
+    display: none;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s;
     width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: #0056b3;
+}
+
+.submit-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
 }
 
 .contact-info {
