@@ -14,47 +14,178 @@
 
     <!--content section-->
     <body class="body">
-        <header class="header" style="{
-            display: flex: 
-        }">
+        <header class="header">
 
-        <div class="logo" >
-            <!--<img src="logo.png" alt="assets\Logo.png" >-->
-            
-        </div>
-            <h1>Welcome</h1>
-            <p>Your source for the latest in technology!</p>
+            <div class="logo" >                         
+            </div>
+
+            <div class="inline">              
+                <h3>Infinity Trading Academy</h3>
+                <p>Your money path with the latest technology!</p>
+            </div>
            
-            <nav class="navi">
-                
-                    <a href="#home" class="nav-button">Home</a>                
-                    <a href="#about" class="nav-button">About</a>
-                    <a href="#contact" class="nav-button">Contact</a>
+            <nav class="nav">
+            
+                <a href="#home" class="nav-button">Home</a>            
+                <a href="#courses" class="nav-button">Courses</a>
+                <a href="#about" class="nav-button">About</a>
+                <a href="#contact" class="nav-button">Contact</a>
                 
             </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </header>
         <hr>
 
         <!--main -->
         <main>
-            <section>
-                <h2>Latest Articles</h2>
-                <article>
-                    <h3>Understanding AI</h3>
-                    <p>Artificial Intelligence is transforming the world...</p>
-                </article>
-                <article>
-                    <h3>Web Development Trends</h3>
-                    <p>Stay updated with the latest trends in web development...</p>
-                </article>
-            </section>
+             <!-- Banner Slider -->
+        <section class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide slide1">
+                    <div class="slide-content">
+                        <h2>Master Financial Markets</h2>
+                        <p>Learn trading strategies from industry professionals</p>
+                        <a href="#courses" class="cta-button">Start Learning</a>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+                        <h2>Expert-Led Courses</h2>
+                        <p>Comprehensive curriculum designed for all skill levels</p>
+                        <a href="#courses" class="cta-button">View Courses</a>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-content">
+                        <h2>Real-World Application</h2>
+                        <p>Practice with live market simulations and tools</p>
+                        <a href="#about" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="nav-dot active" data-slide="0"></div>
+                <div class="nav-dot" data-slide="1"></div>
+                <div class="nav-dot" data-slide="2"></div>
+            </div>
+        </section>
 
-            
+         <!-- Home Section -->
+        <section id="home" style="height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
+            <div>
+                <h1>Welcome to Trading Academy</h1>
+                <p>Your journey to financial success starts here</p>
+            </div>
+        </section>
 
-            <h1>Welcome to My Web Page</h1>
-            <p>This is a simple web page created as an example.</p>
-            <img src="image.jpg" alt="An example image">
-            <script src="js\script.js"></script>
+        <!-- Courses Section -->
+        <section id="courses" style="padding: 4rem 2rem; background: white;">
+            <div class="container">
+                <h2 class="section-title">Our Courses</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <h3>Beginner Trading</h3>
+                        <p>Learn the basics of stock market trading</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <h3>Advanced Strategies</h3>
+                        <p>Master complex trading techniques</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px; text-align: center;">
+                        <h3>Risk Management</h3>
+                        <p>Protect your investments effectively</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="padding: 4rem 2rem; background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                        We are a leading financial education platform dedicated to empowering individuals 
+                        with the knowledge and skills needed to succeed in today's dynamic markets.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.7;">
+                        Our expert instructors bring decades of real-world trading experience, 
+                        ensuring you learn practical strategies that work in actual market conditions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <!-- Left Column - Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column - Contact Info Display -->
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        
+                        <div class="info-display" id="infoDisplay">
+                            <h3>Submitted Information</h3>
+                            <p>Your form submission will appear here...</p>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <div class="info-item">
+                                <div class="info-label">📧 Email</div>
+                                <div class="info-value">info@tradingacademy.com</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">📞 Phone</div>
+                                <div class="info-value">+1 (555) 123-4567</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">📍 Address</div>
+                                <div class="info-value">123 Financial District, New York, NY 10004</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">🕒 Hours</div>
+                                <div class="info-value">Mon - Fri: 9:00 AM - 6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         </main>
 
@@ -62,6 +193,7 @@
         <footer>
             <p>&copy; 2025 shine your tech</p>
         </footer>
+        <script src="js\script.js"></script>
     </body>
 
 </html>
